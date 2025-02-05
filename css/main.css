@@ -68,7 +68,7 @@ color: whitesmoke;
 }
 
 .nav-link {
-background: royalblue;
+background: #2F4F4F;
 padding: 25px 0px;
 }
 
@@ -108,9 +108,32 @@ transition: all .6s;
     cursor: pointer;
 }
 .header-wrapper {
-
+background: url(/src/img/header.bg.jpg) no-repeat center/cover;
+padding-top: 180px;
+padding-bottom: 180px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .header {
-
+background: white;
+padding: 30px;
+border-radius: 8px;
+}
+.header__title{
+    font-size: 50px;
+    font-weight: 400;
+}
+.header__subtitle{
+    font-weight: 200;
+    font-size: 30px;
+    
+}
+.header__consultation {
+    background: #D4AF37;
+    color: white;
+    padding: 16px 8px;
+    font-size: 30px;
+    border-radius: 20px;
 }
