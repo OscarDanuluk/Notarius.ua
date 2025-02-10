@@ -266,3 +266,22 @@ border-radius: 8px;
     text-align: center;
         margin-bottom: 20px;
 }
+.faq {
+    padding: 100px 380px;
+}
+
+.faq__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-list {}
+
+.faq-list-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D4AF37;
+}
+
+.faq-list__open {
+    font-weight: 900;
+}
