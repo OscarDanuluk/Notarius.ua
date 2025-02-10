@@ -246,3 +246,23 @@ border-radius: 8px;
 .swiper-button-next {}
 
 .swiper-scrollbar {}
+.location{
+    padding: 100px 380px;
+}
+.location-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.location-cards__item{
+    width: 380px;
+}
+.location__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.location__desc{
+    text-align: center;
+        margin-bottom: 20px;
+}
