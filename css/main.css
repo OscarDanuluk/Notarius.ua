@@ -1,3 +1,4 @@
+
 @import '/css/reset.css';
 .page-wrapper {
     margin: 0 auto;
@@ -175,3 +176,73 @@ border-radius: 8px;
 .services-cards-item__desc {}
 
 .services-cards-item__more {}
+
+.services-cards-item__more {}
+
+.services-cards-item {}
+
+.services-cards-item__title {}
+
+.services-cards-item__desc {}
+
+.services__order {}
+
+.aboutMe {
+    padding:100px 380px  ;
+    
+}
+
+.aboutMe__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aboutMe-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    column-gap: 10%;
+}
+
+.aboutMe-info-left {
+    flex-basis: 48%;
+}
+
+.aboutMe-info-left__desc {}
+
+.aboutMe-info-left__contact {}
+
+.aboutMe-info-left__number {}
+
+.aboutMe-info__profile {
+    width: 48%;
+}
+
+.aboutMe__sertificate {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {
+
+}
+
+.swiper-slide__item {
+    width: 250px;
+    height: 250px;
+    rotate: -90deg;
+    
+}
+
+.swiper-pagination {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.swiper-scrollbar {}
