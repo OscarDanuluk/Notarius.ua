@@ -490,7 +490,7 @@
   .map-header {
     font-size: 35px;
   }
-  .location-cards-item{
+  .location-cards__item{
     width: 290px;
   }
   .swiper-slide__item {
@@ -507,7 +507,118 @@
   .header-wrapper{
     padding-bottom: 100px;
   }
+  
 }
+@media (max-width:768px) {
+    .nav-burger{
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+        width: 40px;
+    }
+    .nav-burger-line{
+        background: #d4af37;
+        width: 100%;
+        height: 2.5px;
+    }
+    .nav-contact-data-item{
+        display: none;
+    }
+    .container,
+  .nav-contact,
+  .services,
+  .aboutMe,
+  .location,
+  .faq {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .services,
+  .aboutMe {
+    padding-top: 50px;
+  }
+  .aboutMe__title {
+    font-size: 32px;
+  }
+  .services__desc .location__desc,
+  .faq-list-item {
+    font-size: 20px;
+  }
+  .services-cards-item__desc,
+  .aboutMe-info-left__desc,
+  .aboutMe-info-left__contact,
+  .map-contacts-call,
+  .map-contacts-adress__text,
+  .map-contacts-calendar__text {
+    font-size: 16px;
+  }
+  .aboutMe-info{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .aboutMe-info__profile {
+    width: 80%;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .aboutMe-title,
+  .aboutMe__sertificate,
+  .location__title,
+  .faq__title,
+  .map-header {
+    font-size: 32px;
+  }
+  .location-cards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .location-cards__item{
+    width: 70%;
+  }
+  .swiper-slide__item {
+    width: 66%;
+    height: 100%;
+  }
+  .location,
+  .faq {
+    padding-top: 0px;
+  }
+  .map {
+    top: 80px;
+  }
+  .map-header{
+    font-size: 24px;
+
+  }
+  .map-phone, .map-mail, .map-contacts-adress, .map-contacts-calendar__text{
+    font-size: 14px;
+  }
+  .header-wrapper{
+    padding-bottom: 50px;
+  }
+  .nav-link-item-list{
+    display: none;
+  }
+  .nav-link-item{
+    justify-content: flex-end;
+  }
+  .header__title{
+    font-size: 32px;
+  }
+  .header__subtitle{
+    font-size: 22px;
+  }
+  .header__consultation{
+    font-size: 20px;
+    padding: 9px 4px ;
+  }
+  .header{
+    padding: 20px;
+  }
+  }
+
 
 /* @media (max-width:868px) {
     .aboutMe-info{
