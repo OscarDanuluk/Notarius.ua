@@ -421,7 +421,7 @@
     font-size: 20px;
   }
   .aboutMe-info__profile {
-    width: 365;
+    width: 365px;
     height: 292px;
   }
   .aboutMe-title,
@@ -448,3 +448,70 @@
     width: 315px;
   }
 }
+@media (max-width:1024px) {
+    .container,
+  .nav-contact,
+  .services,
+  .aboutMe,
+  .location,
+  .faq {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .services,
+  .aboutMe {
+    padding-top: 70px;
+  }
+  .aboutMe__title {
+    font-size: 35px;
+  }
+  .services__desc .location__desc,
+  .faq-list-item {
+    font-size: 20px;
+  }
+  .services-cards-item__desc,
+  .aboutMe-info-left__desc,
+  .aboutMe-info-left__contact,
+  .map-contacts-call,
+  .map-contacts-adress__text,
+  .map-contacts-calendar__text {
+    font-size: 18px;
+  }
+  .aboutMe-info__profile {
+    width: 44%;
+    height: 292px;
+    object-fit: cover;
+  }
+  .aboutMe-title,
+  .aboutMe__sertificate,
+  .location__title,
+  .faq__title,
+  .map-header {
+    font-size: 35px;
+  }
+  .location-cards-item{
+    width: 290px;
+  }
+  .swiper-slide__item {
+    width: 66%;
+    height: 100%;
+  }
+  .location,
+  .faq {
+    padding-top: 0px;
+  }
+  .map {
+    top: 80px;
+  }
+  .header-wrapper{
+    padding-bottom: 100px;
+  }
+}
+
+/* @media (max-width:868px) {
+    .aboutMe-info{
+        flex-direction: column-reverse;
+
+    }
+} */
