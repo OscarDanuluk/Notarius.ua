@@ -18,3 +18,15 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  // script for modal
+  const button = document.querySelector('.header__consultation')
+  const overlay = document.querySelector('.overlay')
+  const modalClose = document.querySelector('.modal-close')
+  button.addEventListener('click', () => {
+    overlay.style.display = "flex"
+  })
+
+  modalClose.addEventListener('click', () => {
+    overlay.style.display = "none"
+  })
