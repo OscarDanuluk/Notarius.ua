@@ -78,6 +78,30 @@
         <p class="header__subtitle">(коротка реклама)</p>
         <button class="header__consultation">Get Consultation</button>
       </header>
+      <div class="overlay">
+      <div class="form-container">
+        <span class="modal-close">x</span>
+        <h1>Замовити консультацію</h1>
+        <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+                <label for="name">Ім'я:</label>
+                <input type="text" placeholder="Введіть своє ім'я" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Телефон:</label>
+                <input type="tel" placeholder="+38(0__) __-__-___" id="number" name="number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button id="button" type="submit" class="submit-button">Відправити запит</button>
+        </form>
+    </div>
+  </div>
     </div>
     <div class="services-wrapper">
       <div class="services">
