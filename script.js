@@ -36,9 +36,33 @@ const faqListItem = document.querySelectorAll(".faq-list-item");
 faqListItem.forEach(function (li, index) {
   li.addEventListener("click", function () {
     li.nextElementSibling.classList.toggle("faq-active");
-    li.firstElementChild.classList.toggle("rotate");
+    li.firstElementChild.firstElementChild.classList.toggle("rotate");
   });
 });
+// rotate slider diploms
+const swiperSlideItem = document.querySelectorAll('.swiper-slide')
+const stylesForSlides = [
+  "90deg",
+  "180deg",
+  "180deg",
+  "90deg",
+  "90deg",
+  "180deg",
+  "180deg",
+  "180deg",
+  "180deg",
+  "180deg",
+  "180deg",
+  "0deg",
+];
+swiperSlideItem.forEach(function (element, index) {
+  element.style.rotate = stylesForSlides[index]
+})
+
+
+
+
+
 // languages
 const ua = document.querySelector(".ua");
 const eng = document.querySelector(".eng");
