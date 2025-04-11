@@ -7,9 +7,11 @@
 }
     button{
         background: unset;
+        border: none;
+        cursor: pointer;
     }
     input{
-        background: unset;
+        background: unset;  
 
     }
     a{
