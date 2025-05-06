@@ -1,4 +1,9 @@
 @import "/css/reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+}
 body{
   background: #e2c5a9;
 }
@@ -6,9 +11,33 @@ body{
   margin: 0 auto;
   width: 100%;
 }
+.main-title{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main-subtitle{
+  font-size: 30px;
+  text-align: center;
+}
+button{
+  background: #ae9030;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+button:hover{
+  background: #d4af37;
+  color: white;
+  transform: scale(1.05);
+}
 .flex {
   display: flex;
   align-items: center;
+}
+.section-line{
+  border-bottom:3px solid #d4af37;
 }
 .nav-wrapper {
 }
@@ -109,7 +138,8 @@ body{
 }
 .header-wrapper {
   position: relative;
-  
+  background: url(/src/img/HEADER.jpg) no-repeat center/cover;
+  width: 100vw;
   padding-top: 180px;
   padding-bottom: 180px;
   display: flex;
@@ -126,7 +156,7 @@ body{
   filter: blur(2px);
 }
 .header {
-  background: #2b2118;
+  background: #4f3820;
   padding: 30px;
   border-radius: 8px;
   position: relative;
@@ -165,7 +195,8 @@ body{
   z-index: 10
 }
 .form-container {
-  background-color: #ffffff;
+background: #6f5438;
+color: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -187,7 +218,7 @@ body{
 .form-container h1 {
   font-size: 24px;
   margin-bottom: 1.5rem;
-  color: #333333;
+  color: white;
   text-align: center;
 }
 
@@ -198,12 +229,13 @@ body{
 .form-group label {
   display: block;
   font-size: 14px;
-  color: #555555;
+  color: white;
   margin-bottom: 0.5rem;
 }
 
 .form-group input,
 .form-group textarea {
+  color: white;
   width: 100%;
   padding: 10px;
   font-size: 14px;
@@ -215,6 +247,7 @@ body{
 .form-group textarea {
   resize: vertical;
   min-height: 100px;
+  background: transparent;
 }
 
 .submit-button {
@@ -222,24 +255,18 @@ body{
   padding: 12px;
   font-size: 16px;
   color: #ffffff;
-  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-  background-color: #0056b3;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #007bff;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
-
+input:focus-visible,textarea:focus-visible{
+  outline: none;
+  }
 .services-wrapper {
 }
 
@@ -269,29 +296,41 @@ body{
 }
 
 .services-cards-item {
+  transition: all .3s;
   width: 30%;
   border: 1px solid black;
-  background: #ceac86;
+  background: #6f5438;
   border-radius: 10px;
   padding: 9px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  color: rgb(238, 231, 231);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
+.services-cards-item:hover{
+  scale: 1.02;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 .services-cards-item__title {
   text-align: center;
-  font-size: 30px;
+  font-size: 36px;
   margin-bottom: 6px;
+  color: rgb(238, 231, 231);
+  text-transform: uppercase;
+  border-bottom: 2px solid #ae9030;
 }
 
 .services-cards-item__desc {
+font-size: 24px;
 }
 
 .services-cards-item__more {
-}
-
-.services-cards-item__more {
+  padding: 8px 14px;
+  font-size: 24px;
+  align-self: center;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .services-cards-item {
@@ -304,10 +343,20 @@ body{
 }
 
 .services__order {
+  align-self: center;
+  background: #ae9030;
+  margin-bottom: 14px;
+  color: white;
+  padding: 16px 8px;
+  font-size: 24px;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 .aboutMe {
   padding: 100px 380px;
+  color: white;
+  background: url(/src/img/bg-about.png) no-repeat center/cover;
 }
 
 .aboutMe__title {
@@ -327,15 +376,26 @@ body{
 }
 
 .aboutMe-info-left__desc {
+  font-size: 26px;
+  line-height: 40px;
 }
 
 .aboutMe-info-left__contact {
+  font-size: 30px;
+
 }
 
 .aboutMe-info-left__number {
+  font-size: 26px;
+  transition: all .3s;
+  cursor: pointer;
 }
-
+.aboutMe-info-left__number:hover{
+  color: red;
+  font-size: 29px;
+}
 .aboutMe-info__profile {
+  border-radius: 20px;
   width: 48%;
 }
 
@@ -345,9 +405,15 @@ body{
 }
 
 .swiper {
+  background: #6f5438;
+  border-radius: 20px;
+  padding: 50px 40px;
 }
 
 .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
 
 .swiper-slide {
@@ -380,6 +446,7 @@ body{
   gap: 20px;
 }
 .location-cards__item {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   width: 380px;
 }
 .location__title {
@@ -776,3 +843,4 @@ text-align: center;
     padding: 20px;
   }
   }
+
