@@ -42,18 +42,18 @@ faqListItem.forEach(function (li, index) {
 // rotate slider diploms
 const swiperSlideItem = document.querySelectorAll('.swiper-slide')
 const stylesForSlides = [
+  "270deg",
+  "360deg",
   "90deg",
-  "180deg",
-  "180deg",
+  "90deg",
+  "360deg",
+  "360deg",
   "90deg",
   "90deg",
-  "180deg",
-  "180deg",
-  "180deg",
-  "180deg",
-  "180deg",
-  "180deg",
-  "0deg",
+  "90deg",
+  "360deg",
+  "90deg",
+  "90deg",
 ];
 swiperSlideItem.forEach(function (element, index) {
   element.style.rotate = stylesForSlides[index]
