@@ -47,11 +47,13 @@ button:hover{
 
 .container,
 .nav-contact {
-  padding-left: 380px;
-  padding-right: 380px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .nav-contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: space-between;
   background: #4f3820;
   border-bottom: 1px solid rgba(255, 255, 255, 0.457);
@@ -274,8 +276,8 @@ input:focus-visible,textarea:focus-visible{
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  padding-left: 380px;
-  padding-right: 380px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .services-overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -386,7 +388,7 @@ font-size: 24px;
 }
 
 .aboutMe {
-  padding: 100px 380px;
+  padding: 100px 200px;
   color: white;
   background: url(/src/img/bg-about.png) no-repeat center/cover;
 }
@@ -469,7 +471,7 @@ font-size: 24px;
 .swiper-scrollbar {
 }
 .location {
-  padding: 100px 380px;
+  padding: 100px 200px;
 }
 .location-cards {
   display: flex;
@@ -490,7 +492,7 @@ font-size: 24px;
   margin-bottom: 20px;
 }
 .faq {
-  padding: 100px 380px;
+  padding: 100px 200px;
 }
 .faq-list-item-hidden{
   translate: 0% -50px;
@@ -647,6 +649,7 @@ text-align: center;
   border-radius: 50%;
 }
 @media (max-width: 1440px) {
+
   .container,
   .nav-contact,
   .services,
@@ -698,6 +701,9 @@ text-align: center;
   .map {
     top: 80px;
   }
+  .services-cards-item{
+    width: 47%;
+  }
 }
 @media (max-width: 1200px) {
   .location-cards__item {
@@ -705,6 +711,9 @@ text-align: center;
   }
 }
 @media (max-width:1024px) {
+  .faq-list-item{
+   font-size: 26px; 
+  }
     .container,
   .nav-contact,
   .services,
@@ -763,9 +772,32 @@ text-align: center;
   .header-wrapper{
     padding-bottom: 100px;
   }
-  
+  .services-cards-item{
+    width: 100%;
+  }
 }
 @media (max-width:768px) {
+    .nav-link{
+      padding: 5px;
+    }
+    .nav-contact__logo{
+      width: 50px;
+      height: 50px;
+    }
+    .nav-contact{
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .services__title{
+      font-size: 32px;
+      margin-bottom: 0px;
+    }
+    .services-cards-item__title{
+      font-size: 28px;
+    }
+    .services{
+      row-gap: 16px;
+    }
     .nav-burger{
         display: flex;
         flex-direction: column;
@@ -809,16 +841,42 @@ text-align: center;
   .map-contacts-calendar__text {
     font-size: 16px;
   }
+  .services-cards-item__desc{
+    font-size: 18px;
+  }
+  .services-cards-item__more{
+    font-size: 22px;
+    width: 100%;
+  }
   .aboutMe-info{
     flex-direction: column;
     row-gap: 30px;
   }
   .aboutMe-info__profile {
-    width: 80%;
+    width: 100%;
     height: 320px;
     object-fit: cover;
   }
-
+  .aboutMe-info-left__desc{
+    line-height: 22px;
+  }
+  .aboutMe__title{
+    margin-bottom: 20px;
+  }
+  .aboutMe-info-left__contact{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .aboutMe-info-left__number{
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .swiper-wrapper{
+    height: 124px!important;
+    display: flex;
+    column-gap: 20px;
+  }
   .aboutMe-title,
   .aboutMe__sertificate,
   .location__title,
@@ -854,6 +912,7 @@ text-align: center;
   }
   .header-wrapper{
     padding-bottom: 50px;
+    padding-top: 50px;
   }
   .nav-link-item-list{
     display: none;
@@ -874,5 +933,32 @@ text-align: center;
   .header{
     padding: 20px;
   }
+  .aboutMe{
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
+  .location-cards__item{
+    width: 45%;
+  }
+  .location-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .faq{
+    padding: 30px 20px;
+  }
+  .map{
+    width: 310px;
+  }
+  .services-modal{
+    width: 90%;
+  }
+  .services-modal-desc{
+    font-size: 22px;
+  }
+  .services__order{
+    width: 100%;
+  }
+  
+}
 
