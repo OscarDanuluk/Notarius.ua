@@ -55,10 +55,38 @@ const stylesForSlides = [
   "90deg",
   "90deg",
 ];
+const stylesForHiddenSlides = [
+  "270deg",
+  "360deg",
+  "90deg",
+  "90deg",
+  "360deg",
+  "360deg",
+  "90deg",
+  "90deg",
+  "90deg",
+  "360deg",
+  "90deg",
+  "90deg",
+];
+const swiperOverlay = document.querySelector('.swiper-overlay')
+const swiperModalSertificate = document.querySelector('.swiper-modal__sertificate')
+
 swiperSlideItem.forEach(function (element, index) {
   element.style.rotate = stylesForSlides[index]
+  element.addEventListener('click',function(element){
+    console.log(element.srcElement)
+
+    swiperModalSertificate.style.rotate = stylesForSlides[index]
+    swiperOverlay.style.scale = '1'
+    swiperModalSertificate.src = element.srcElement.src
+  })
 })
 
+
+swiperOverlay.addEventListener('click',function(){
+  swiperOverlay.style.scale = '0'
+})
 
 
 
