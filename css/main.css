@@ -75,11 +75,12 @@ button:hover{
   width: 50vw;
   transition: all .4s;
   translate: -110% 0%;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   justify-content: flex-end;
   padding:30px 100px 30px 30px;
   align-items:flex-end;
+  pointer-events: auto;
 }
 .nav-overlay-close{
   position: absolute;
@@ -262,7 +263,8 @@ button:hover{
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.507);
-  z-index: 10
+  z-index: 10;
+  pointer-events: auto;
 }
 .form-container {
 background: #6f5438;
@@ -358,6 +360,7 @@ input:focus-visible,textarea:focus-visible{
   display: none;
   justify-content: center;
   align-items: center;
+  pointer-events: auto;
 }
 .services-modal {
   width: 800px;
@@ -367,7 +370,8 @@ input:focus-visible,textarea:focus-visible{
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  pointer-events: auto;
 }
 .services-modal-close {
   align-self: flex-end;
@@ -551,7 +555,8 @@ font-size: 24px;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.507);
-  z-index: 10
+  z-index: 10;
+  pointer-events: auto;
 }
 .swiper-modal__sertificate{
   width: 400px;
@@ -574,7 +579,7 @@ font-size: 24px;
 }
 .location-cards__item {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  width: 380px;
+  width: 23%;
 }
 .location__title {
   text-align: center;
@@ -599,7 +604,7 @@ font-size: 24px;
 .faq-active{
   translate: 0% 0px;
   opacity: 1;
-  height: 50px;
+  height: 100%;
   position: static;
   z-index: 0;
   
@@ -619,26 +624,37 @@ font-size: 24px;
   padding-bottom: 20px;
   border-bottom: 1px solid #d4af37;
   cursor: pointer;
+  font-size: 32px;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
 }
-
+.faq-list-item-hidden{
+  font-size: 24px;
+  color:#2a1c0d;
+  padding: 4px;
+  background: #d4af37;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 .faq-list__open {
   font-weight: 900;
   font-size: 30px;
   background: black;
   color: white;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  min-width: 34px;
+  max-width: 34px;
+  min-height: 34px;
+  max-height: 34px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition:all .3s ;
 text-align: center;
+margin-top: 16px;
 }
 .rotate{
   rotate: 45deg;
@@ -653,7 +669,7 @@ text-align: center;
 }
 .map {
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   left: 300px;
   top: 120px;
   background: white;
@@ -1064,6 +1080,35 @@ text-align: center;
     width: 70%;
     height: 100%;
   }
-  
+  .faq-list-item{
+    font-size: 24px;
+  }
+  .faq-list-item-hidden{
+    font-size: 20px;
+  }
+  .location{
+    padding-bottom: 20px;
+  }
+}
+@media (max-width:460px) {
+  .faq-list-item{
+    font-size: 22px;
+  }
+  .main-subtitle{
+    font-size: 22px;
+  }
+  .faq-list-item-hidden{
+    font-size: 18px;
+  }
 }
 
+.map-wrapper {
+  position: relative;
+  z-index: 1;
+  pointer-events: none; /* важный момент */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
