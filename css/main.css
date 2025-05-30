@@ -64,6 +64,74 @@ button:hover{
   height: 70px;
   border-radius: 50%;
 }
+/* hidden menun */
+.nav-overlay {
+  background: #4f3820;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  transition: all .4s;
+  translate: -110% 0%;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding:30px 100px 30px 30px;
+  align-items:flex-end;
+}
+.nav-overlay-close{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  background: #ffffffcf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 28px;
+  color: #ae9030;
+  transition: all .4s;
+}
+.nav-overlay-close:hover{
+  scale: 1.1;
+  background: white;
+}
+.nav-overlay-active{
+  translate: 0% 0%;
+}
+.nav-burger{
+  cursor: pointer;
+  transition: all .4s;
+}
+.nav-burger:hover{
+  scale: 1.1;
+}
+.nav-burger-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+.nav-burger-data-item {
+  color: #d4af37;
+}
+.nav-burger-data-item__title {
+}
+.place {
+}
+.nav-burger-data-item__desc {
+}
+.nav-phone {
+}
+.nav-burger-line {
+}
+/* end hidden menu */
 .nav-phone {
   position: relative;
 }
