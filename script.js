@@ -281,3 +281,27 @@ servicesModalClose.addEventListener('click', function () {
   servicesOverlay.style.display = 'none'
   servicesModalDesc.textContent = ''
 })
+
+// burger menu
+const navOverlayClose = document.querySelector('.nav-overlay-close')
+const navOverlay = document.querySelector('.nav-overlay')
+const navBurger = document.querySelector('.nav-burger')
+navBurger.addEventListener('click',function(){
+  navOverlay.classList.toggle('nav-overlay-active')
+})
+
+function myLogic() {
+  navOverlay.classList.remove('nav-overlay-active')
+}
+
+if (window.innerWidth > 768) {
+  myLogic();
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    myLogic();
+  }
+});
+
+// .nav-ovelay-active
