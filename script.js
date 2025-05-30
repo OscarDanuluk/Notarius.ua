@@ -1,9 +1,26 @@
 const swiper = new Swiper(".swiper", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 3,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+  },
+  breakpoints: {
+    1920:{
+      slidesPerView: 4,
+    },
+    1440:{
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    },
   },
 
   // Navigation arrows
@@ -75,6 +92,7 @@ const swiperModalSertificate = document.querySelector('.swiper-modal__sertificat
 swiperSlideItem.forEach(function (element, index) {
   element.style.rotate = stylesForSlides[index]
   element.addEventListener('click',function(element){
+    swiperOverlay.style.display = 'flex'
     console.log(element.srcElement)
 
     swiperModalSertificate.style.rotate = stylesForSlides[index]
@@ -83,9 +101,15 @@ swiperSlideItem.forEach(function (element, index) {
   })
 })
 
-
 swiperOverlay.addEventListener('click',function(){
   swiperOverlay.style.scale = '0'
+  swiperOverlay.style.display = 'none'
+})
+document.addEventListener('keydown',function(e){
+if(e.key == 'Escape'){
+  swiperOverlay.style.scale = '0'
+  swiperOverlay.style.display = 'none'  
+}
 })
 
 
