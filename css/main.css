@@ -180,6 +180,7 @@ button:hover{
 }
 
 .nav-link-item-list-element {
+  cursor: pointer;
   color: black;
   font-size: 23px;
   font-weight: 700;
@@ -237,6 +238,7 @@ button:hover{
   flex-direction: column;
 }
 .header__title {
+  width: 432px;
   font-size: 50px;
   font-weight: 400;
 }
