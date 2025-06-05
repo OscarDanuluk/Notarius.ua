@@ -459,10 +459,13 @@ function switchLanguage(langType) {
   document.querySelector('.faq-answer-three').textContent = lang[langType].faqAnswerThree
   document.querySelector('.map-header').textContent = lang[langType].mapHead
   document.querySelector('.map-hidden-text').textContent = lang[langType].mapText
-  document.querySelector('.map-contacts-adress__text').textContent = lang[langType].mapAdress
+  document.querySelectorAll('.adressa').forEach((el) => {
+    el.textContent = lang[langType].mapAdress;
+  }
+  ),
   document.querySelector('.map-contacts-calendar__text').textContent = lang[langType].mapTime
-  document.querySelector('.bold-map').textContent = lang[langType].mapTimeWeekend
   document.querySelector('.footer-police-text').textContent = lang[langType].footerText
+  // document.querySelector('.bold-map').textContent = lang[langType].mapTimeWeekend
 }
 const hiddenModalDesc = document.querySelector('.services-modal-desc')
 console.log(hiddenModalDesc)
