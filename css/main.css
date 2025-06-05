@@ -1,5 +1,8 @@
 @import "/css/reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 *{
   font-family: "Libre Baskerville", serif;
   font-style: normal;
@@ -829,6 +832,9 @@ margin-top: 16px;
   .faq-list-item{
    font-size: 26px; 
   }
+  .header__title{
+    width: 100%;
+  }
     .container,
   .nav-contact,
   .services,
@@ -1093,6 +1099,9 @@ margin-top: 16px;
   }
 }
 @media (max-width:460px) {
+  .map{
+    width: 80%;
+  }
   .faq-list-item{
     font-size: 22px;
   }
