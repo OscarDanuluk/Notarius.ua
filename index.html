@@ -23,7 +23,7 @@
                   Україна <br />
                   Івано-Франківськ
                 </h4>
-                <p class="nav-contact-data-item__desc">(вписати адресу)</p>
+                <p class="nav-contact-data-item__desc adressa">вулиця Калуська, 13, Бурштин, Івано-Франківська область</p>
               </li>
               <li class="nav-contact-data-item">
                 <h4 class="nav-contact-data-item__title unique-nav-title">Пн-Сб 09:00-18:00</h4>
@@ -54,7 +54,7 @@
                   Україна <br />
                   Івано-Франківськ
                 </h4>
-                <p class="nav-burger-data-item__desc">(вписати адресу)</p>
+                <p class="nav-burger-data-item__desc adressa">вулиця Калуська, 13, Бурштин, Івано-Франківська область</p>
               </li>
               <li class="nav-burger-data-item">
                 <h4 class="nav-burger-data-item__title  unique-nav-title">Пн-Сб 09:00-18:00</h4>
@@ -76,10 +76,10 @@
             <div class="container">
               <div class="nav-link-item flex">
                 <ul class="nav-link-item-list flex">
-                  <li class="nav-link-item-list-element">Домашня сторінка</li>
-                  <li class="nav-link-item-list-element">Послуги</li>
-                  <li class="nav-link-item-list-element">Про мене</li>
-                  <li class="nav-link-item-list-element">Питання/Відповіді</li>
+                  <li class="nav-link-item-list-element"><a href="#HomePage">Домашня сторінка</a></li>
+                  <li class="nav-link-item-list-element"><a href="#Services">Послуги</a></li>
+                  <li class="nav-link-item-list-element"><a href="#About">Про мене</a></li>
+                  <li class="nav-link-item-list-element"><a href="#FAQ">Питання/Відповіді</a></li>
                 </ul>
                 <div class="nav-link-item-switcher flex">
                   <p class="switcher-lang ua switcher-active">Укр</p>
@@ -91,7 +91,7 @@
         </nav>
       </div>
     </div>
-    <div class="header-wrapper section-line">
+    <div id="HomePage" class="header-wrapper section-line">
       <header class="header">
         <h1 class="header__title unique-header-title">
           Олексій Данилюк 
@@ -144,7 +144,7 @@
         </div>
       </div>
     </div>
-    <div class="services-wrapper section-line">
+    <div id="Services" class="services-wrapper section-line">
       <div class="services">
         <h2 class="services__title main-title">Послуги</h2>
         <p class="services__desc main-subtitle">Lorem ipsum dolor, sit amet.</p>
@@ -221,7 +221,7 @@
         <button class="services__order">замовити послугу</button>
       </div>
     </div>
-    <div class="aboutMe section-line">
+    <div id="About" class="aboutMe section-line">
       <h2 class="aboutMe__title main-title">Олексій Данилюк Орестович</h2>
       <div class="aboutMe-info">
         <div class="aboutMe-info-left">
@@ -330,7 +330,7 @@
         <img src="/src/img/found4.jpg" alt="" class="location-cards__item" />
       </div>
     </div>
-    <div class="faq section-line">
+    <div id="FAQ" class="faq section-line">
       <h4 class="faq__title main-title">Питання/Відповіді</h4>
       <ul class="faq-list">
         <li class="faq-list-item">
@@ -377,22 +377,21 @@
           <h2 class="map-header">Контакти</h2>
           <div class="map-contacts">
             <div class="map-contacts-call">
-              <img src="/src/img/phone icon.jpg" alt="" />
+              
               <p class="map-phone">
                 <a href="tel:+380976684447" class="map-contacts-call__phone"
-                  >(097) <span class="bold-map num">668-44-47</span>
+                  >(097)-668-44-47
                 </a>
                 <span class="map-hidden-text">або пишіть</span>
               </p>
               <a href="viber://chat?number=+380976684447">
-                <img src="/src/img/phone icon.jpg" class="map-links" alt="" />
               </a>
               <!-- <a href="https://t.me/Andrzej_Prawnik">
                 <img src="/img/map/telegram.svg" class="map-links" alt="" />
               </a> -->
             </div>
             <div class="map-contacts-mail">
-              <img src="/src/img/phone icon.jpg" alt="" />
+              
               <span class="map-mail">
                 <a
                   href="mailto:orehovandrey921@gmail.com"
@@ -402,13 +401,13 @@
               </span>
             </div>
             <div class="map-contacts-adress">
-              <img src="/src/img/phone icon.jpg" alt="" />
-              <p class="map-contacts-adress__text">
+              
+              <p class="map-contacts-adress__text adressa">
                 вулиця Калуська, 13, Бурштин, Івано-Франківська область
               </p>
             </div>
             <div class="map-contacts-adress">
-              <img src="/src/img/phone icon.jpg" alt="" />
+              
               <p class="map-contacts-calendar__text">
                 Графік роботи Пн-Сб с 9:00 до 18:00,
 
